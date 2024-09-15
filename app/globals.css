@@ -25,3 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+
+#content_nav_butn {
+  width: 100%; 
+  font-size: 1.25rem;
+  line-height: 1.75rem; 
+  text-align: right; 
+  white-space: normal; 
+  overflow-wrap: break-word;
+}
+button:hover {
+  text-decoration: underline; 
+}   
