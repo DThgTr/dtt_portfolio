@@ -1,0 +1,8 @@
+.skill_icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.20rem;
+}
+.skill_icon:hover {
+    opacity: 0.5;
+}
