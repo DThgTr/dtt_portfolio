@@ -26,14 +26,16 @@ body {
   }
 }
 
-#content_nav_butn {
-  width: 100%; 
-  font-size: 1.25rem;
-  line-height: 1.75rem; 
-  text-align: right; 
-  white-space: normal; 
-  overflow-wrap: break-word;
+.content_nav_butn {
+  @apply 
+    w-full 
+    text-xl leading-7 text-center whitespace-normal
+    hover:text-yellow-400
+    bg-blue-600 bg-opacity-25
+    p-[2%]
+    rounded-3xl;
 }
-button:hover {
-  text-decoration: underline; 
-}   
+
+main {
+  @apply text-blue-100 overflow-auto
+}

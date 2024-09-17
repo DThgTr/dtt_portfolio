@@ -9,9 +9,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="h-screen flex flex-wrap bg-gradient-to-br from-pink-800 via-purple-800 to-blue-800">
+        <main className="h-screen flex flex-wrap bg-gradient-to-br from-pink-800 via-purple-800 to-blue-800">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );

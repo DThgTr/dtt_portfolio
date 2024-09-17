@@ -1,66 +1,67 @@
 'use client'
 
+import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import About from "./component/About";
 import Resume from "./component/Resume";
 import Contact from "./component/Contact";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Link2, Linkedin } from "lucide-react";
 
 export default function Home() {
   const [activeContent, set_activeContent] = useState("About")
 
   return (
-    <div className="
+    <main className="
           flex flex-1 flex-col sm:flex-row 
           m-[2%] 
           overflow-hidden
     ">
       {/*=====================CONTENT NAV=====================*/}
       <nav className="
-            sm:w-1/6 md:w-1/12 
+            w-[12%]
             p-4
             my-[2%]
       ">
         <ul className="flex sm:flex-col justify-end space-x-4 sm:space-x-0 sm:space-y-2">
           <li className="min-w-0">
-            <button id="content_nav_butn" onClick={() => set_activeContent("About")}>
+            <button className="content_nav_butn" onClick={() => set_activeContent("About")}>
               About
             </button>
           </li>
           <li className="min-w-0">
-            <button id="content_nav_butn" onClick={() => set_activeContent("Resume")}>
-              Resume
+            <button className="content_nav_butn" onClick={() => set_activeContent("Resume")}>
+              Experience
             </button>
           </li>
           <li className="min-w-0">
-            <button id="content_nav_butn" onClick={() => set_activeContent("Contact")}>
+            <button className="content_nav_butn" onClick={() => set_activeContent("Contact")}>
               Contact
             </button>
           </li>
         </ul>
       </nav>
 
-      {/*=====================QUICK INFO=====================*/}
-      <div className="
+      {/*=====================QUICK INFO SECTION=====================*/}
+      <section className="
             flex flex-wrap flex-col
             items-center
-            sm:w-1/3 md:w-3/12 
+            w-3/12
             rounded-3xl shadow-xl
             p-4 
             my-[2%]
             bg-blue-800 bg-opacity-25
       ">
-        <div className="relative h-[50%] w-[100%]">
+        <figure className="relative h-[50%] w-[100%]">
           <Image src={"/incandescent.jpeg"}
-            layout="fill"
+            fill
             objectFit="cover"
             className="rounded-3xl border"
           />
-        </div>
+        </figure>
 
-        <div className="
-                break-words overflow-wrap-break-word
+        <section className="
+                break-words overflow-wrap break-word
                 flex flex-wrap flex-col
                 justify-center
                 m-[5%]
@@ -97,19 +98,27 @@ export default function Home() {
                 <Github className="w-8 h-8"/>
               </a>
             </div>
-        </div>
-      </div>
+        </section>
+
+        <footer className="flex flex-row hover:text-blue-400 underline">
+          <Link2 className="pr-2"/>
+          <a href="https://docs.google.com/document/d/14_n4Mf9zu7zjXIZUN7Gw3aVsB3qDK-b4Ic_KCAnipF0/edit?usp=drive_link">
+            Download Resume
+          </a>
+          <Link2 className="pl-2"/>
+        </footer>
+      </section>
       
-      {/*=====================CONTENT=====================*/}
-      <div className="
-            flex-grow 
-            p-4 
+      {/*=====================CONTENT SECTION=====================*/}
+      <section className="
+            flex flex-grow
+            p-[2%]
             my-[3%] mr-[3%]
             rounded-3xl shadow-lg
             bg-blue-800 bg-opacity-15
       ">
         <div className="
-              p-4
+              p-[3%]
               size-[100%]
               border rounded-3xl border-white
         ">
@@ -123,7 +132,7 @@ export default function Home() {
             activeContent === "Contact" && <Contact/>
           }
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
