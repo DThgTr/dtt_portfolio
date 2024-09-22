@@ -4,33 +4,32 @@ import styles from "./About.module.css"
 export default function About() {
     return (
         <main className="size-[100%]">
-            <div className="text-3xl flex flex-row">
+            <div className="text-3xl flex flex-row border-b-2 border-b-white pb-3 mb-3">
                 <p className="text-yellow-500 mr-2">About</p>
                 Me
             </div>
 
-            <div className="my-3 border border-white"></div>
-
             <section>
                 <div className="max-w-min min-w-fit text-xl">
                     <p className="mb-5">
-                        Hi! I'm <span className="text-yellow-500">Thang</span>, some might know me as <span className="text-yellow-500">Colby</span>. 
-                        Currently a Computer Science senior at the University of Texas at Dallas, I am graduating in <strong className="underline">May 2025</strong>.
+                        I am currently a Computer Science senior at the University of Texas at Dallas, I am graduating in May 2025.
+                        <div className="mt-2">
+                            My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.
+                            In addition, I have been leaning into Machine Learning for more than a year, doing data cleaning, building and training neural networks using Python and Tensorflow.
+                        </div>
                     </p>
                     <p className="mb-5">
-                        <strong className="text-3xl text-yellow-500">As</strong> a developer, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture designs and standards.
+                        <strong className="text-3xl text-yellow-500">As a developer</strong>, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture designs and standards.
                     </p>
                     <p>
-                        <strong className="text-3xl text-yellow-500">I</strong> am attentive to details and always on the lookout for new opportunities to grow my skills.
+                        <strong className="text-3xl text-yellow-500">As an individual</strong>, I am attentive to details and always on the lookout for new opportunities to grow my skills.
                     </p>
                 </div>
             </section>
 
-            <div className="my-5"></div>
-
-            <section className="flex flex-wrap justify-center">
+            <section className="flex flex-wrap justify-center my-8">
                 <p className="text-3xl text-center w-[100%] m-5">
-                    Notable <strong className="text-yellow-500">Skills</strong>:
+                    Main <strong className="text-yellow-500">Skills</strong>:
                 </p>
                 <div className="flex flex-wrap flex-row w-[100%] justify-center ">
                     <section>
@@ -47,7 +46,7 @@ export default function About() {
                         </div>
                     </section>
 
-                    <div className="mx-5 border border-white"></div>
+                    <div className="mx-7 border border-white"></div>
                     
                     <section>
                         <div className="flex flex-row">
