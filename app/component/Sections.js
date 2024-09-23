@@ -28,6 +28,7 @@ export default function Sections() {
                     rounded-3xl shadow-lg
                     bg-blue-800 bg-opacity-15
                     scroll-mt-20
+                    h-[680px]
                 ">
                     <div className="
                     p-[3%]

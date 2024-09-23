@@ -14,13 +14,10 @@ export default function Intro() {
           p-[5%]
           mb-[3%]
           bg-blue-800 bg-opacity-15
+          brightness-110
       ">
-        <figure className="relative md:h-[70%] md:w-[30%] sm:size-[40%]">
-          <Image src={"/incandescent.jpeg"}
-            fill
-            objectFit="cover"
-            className="rounded-3xl border nin-h-"
-          />
+        <figure className="relative md:h-[70%] md:w-[30%] sm:size-[40%] ">
+            <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
         </figure>
 
         <div className="mx-[4%]"></div>

@@ -13,10 +13,10 @@ export default function About() {
                 <div className="max-w-min min-w-fit text-xl">
                     <p className="mb-5">
                         I am currently a Computer Science senior at the University of Texas at Dallas, I am graduating in May 2025.
-                        <div className="mt-2">
+                        <span className="mt-2">
                             My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.
                             In addition, I have been leaning into Machine Learning for more than a year, doing data cleaning, building and training neural networks using Python and Tensorflow.
-                        </div>
+                        </span>
                     </p>
                     <p className="mb-5">
                         <strong className="text-3xl text-yellow-500">As a developer</strong>, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture designs and standards.
