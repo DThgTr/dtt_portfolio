@@ -1,73 +1,39 @@
-'use client'
+import React from 'react'
+import { LucideHome } from 'lucide-react'
 
-import { useState, useEffect } from 'react'
-
-export default function NavBar() {
-  const [activeSection, setActiveSection] = useState('section1')
-
-  useEffect(() => {
-    const sections = ['About', 'Experience', 'Contact']
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.7,
-    }
-
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id)
-        }
-      })
-    }
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions)
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section)
-      if (element) observer.observe(element)
-    })
-
-    return () => observer.disconnect()
-  }, [])
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' })
-    }
-  }
-
+export default function NavBar({ sections, activeSection, onSectionChange }) {
   return (
-    <div className="min-w-screen">
-      <nav 
-        className="fixed top-0 left-0 right-0 bg-background shadow-lg text-2xl z-50
-        bg-gradient-to-b from-fuchsia-800 to-violet-600
-      ">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <span className="font-bold">Colby Tran Portfolio</span>
-          <div className="space-x-5">
+    <nav className="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex items-center">
             <button
-              variant={activeSection === 'section1' ? 'default' : 'outline'}
-              onClick={() => scrollToSection('About')}
+              onClick={() => onSectionChange('Intro')}
+              className="text-3xl font-semibold hover:text-blue-500 flex items-center space-x-2"
             >
-              About
-            </button>
-            <button 
-              variant={activeSection === 'section2' ? 'default' : 'outline'}
-              onClick={() => scrollToSection('Experience')}
-            >
-              Experience
-            </button>
-            <button 
-              variant={activeSection === 'section3' ? 'default' : 'outline'}
-              onClick={() => scrollToSection('Contact')}
-            >
-              Contact
+              <LucideHome className="size-10"/>
+              <span>Duc Thang Tran</span>
             </button>
           </div>
+          <div className="flex">
+            <div className="flex-shrink-0 flex items-center">
+              {sections.filter(section => section !== 'Intro').map((section) => (
+                <button
+                  key={section}
+                  onClick={() => onSectionChange(section)}
+                  className={`px-3 py-2 rounded-md text-lg font-medium mr-2 transition-colors ${
+                    activeSection === section
+                      ? 'bg-indigo-500 text-white'
+                      : 'hover:bg-red-500'
+                  }`}
+                >
+                  {section}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   )
 }

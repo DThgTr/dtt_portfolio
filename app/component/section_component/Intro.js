@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import { Github, Link2, Linkedin } from "lucide-react";
 
 export default function Intro() {
@@ -8,15 +7,9 @@ export default function Intro() {
           flex md:flex-row sm:flex-col sm
           justify-center
           items-center
-          w-[98%]
-          md:h-[600px] sm:h-[800px]
-          rounded-3xl shadow-lg
-          p-[5%]
-          mb-[3%]
-          bg-blue-800 bg-opacity-15
-          brightness-110
+          size-full
       ">
-        <figure className="relative md:h-[70%] md:w-[30%] sm:size-[40%] ">
+        <figure className="relative md:h-[70%] md:w-[30%]">
             <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
         </figure>
 
