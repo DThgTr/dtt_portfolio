@@ -4,7 +4,7 @@ import { Github, Link2, Linkedin } from "lucide-react";
 export default function Intro() {
     return (
       <section className="
-          flex md:flex-row sm:flex-col sm
+          flex flex-row
           justify-center
           items-center
           size-full
@@ -18,7 +18,7 @@ export default function Intro() {
         <section className="
                 flex flex-col
                 w-[50%]
-                p-[3%]
+                p-[1%]
         ">
             {/*Intro */}
             <div className="
@@ -32,7 +32,7 @@ export default function Intro() {
                     &emsp;&emsp;Some know me as <strong className="text-yellow-500">Colby</strong>.
                 </p>
 
-                <p className="font-bold text-3xl my-[10%]">
+                <p className="font-bold text-3xl my-[5%]">
                     I am a <em className="text-yellow-500">fullstack developer</em>
                 </p>
             </div>

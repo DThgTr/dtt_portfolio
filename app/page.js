@@ -3,19 +3,22 @@
 import Intro from "./component/section_component/Intro"
 import About from "./component/section_component/About"
 import Experience from "./component/section_component/Experience"
+import Project from "./component/section_component/Project"
 import Contact from "./component/section_component/Contact"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import NavBar from "./component/NavBar"
 
 export default function Home() {
-  const sections = {
+  const [activeSection, set_activeSection] = useState("Intro")
+
+  const section_comps = {
     Intro,
     About,
     Experience,
+    Project,
     Contact
   }
-  const [activeSection, set_activeSection] = useState("Intro")
   return (
     <main className="
           flex flex-1 flex-col
@@ -25,7 +28,7 @@ export default function Home() {
           overflow-hidden
     ">
       <NavBar
-        sections={Object.keys(sections)}
+        sections={Object.keys(section_comps)}
         activeSection={activeSection}
         onSectionChange={set_activeSection}
       />
@@ -38,7 +41,6 @@ export default function Home() {
                 bg-blue-800 bg-opacity-25
                 h-[640px]
         ">
-            
             <AnimatePresence mode="wait">
                 <motion.div className="p-[3%] size-[100%] rounded-3xl"
                     key={activeSection}
@@ -47,7 +49,7 @@ export default function Home() {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
                 >
-                    {sections[activeSection]()}
+                    {section_comps[activeSection]()}
                 </motion.div>
             </AnimatePresence>
         </section>
