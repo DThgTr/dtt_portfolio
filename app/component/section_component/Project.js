@@ -3,6 +3,12 @@ import ProjCard from "../util/ProjCard"
 export default function Project() {
     const projects = [
         {
+            proj_name: "Web Portfolio",
+            proj_link: ["Github", "https://github.com/DThgTr/dtt_portfolio"],
+            description: "This is my personal web portfolio. It is created with React, styled with Tailwind and deployed on Netlify.",
+            skills: ["Javascript", "React", "Tailwind", "Nextjs"]
+        },
+        {
             proj_name: "Sale Management Application (Melior)",
             proj_link: ["Github", "https://github.com/DThgTr/meliorapp"],
             description: "Melior is a Spring Boot-powered, web-based sample system application that manage sale transactions as well as customers' information of an essential oils company. It employs Restful architectural style as the template for its APIs, which are documented with Swagger UI. This project is where I put to use my ability to employ Test-Driven Development methodology, design cohesive Database schemas and formulate Software Architecture Design",
