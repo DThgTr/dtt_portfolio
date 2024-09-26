@@ -10,12 +10,13 @@ export default function Intro() {
           space-x-[2%]
       ">
         <section className="
-          flex flex-col w-[50%] h-full
+          flex flex-col w-[45%] h-full
           justify-center
           items-center
-          space-y-5
+          space-y-3
+          px-3
         ">
-          <figure className="relative h-[60%] w-[50%]">
+          <figure className="relative h-[60%] w-[60%]">
             <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
           </figure>
           <div className="text-lg">
@@ -42,20 +43,19 @@ export default function Intro() {
             ">
                 <p className="text-xl mb-2 italic">Hello there!</p>
 
-                <p className="text-xl italic">
-                    &emsp;My name is <strong className="text-yellow-500">Duc Thang Tran</strong>. 
+                <p className="text-2xl italic">
+                    &emsp;My name is <strong className="text-yellow-400">Duc Thang Tran</strong>. 
                     <br className="mb-2"/>
-                    &emsp;&emsp;Some know me as <strong className="text-yellow-500">Colby</strong>.
+                    &emsp;&emsp;Some know me as <strong className="text-yellow-400">Colby</strong>.
                 </p>
 
-                <p className="font-bold text-3xl my-[5%]">
-                    I am a <em className="text-yellow-500">fullstack developer</em>
+                <p className="font-bold text-4xl my-[5%]">
+                    I am a <em className="text-yellow-400">fullstack developer</em>
                 </p>
             </div>
 
             {/*Links */}
-            <div className="flex flex-row justify-center
-            ">
+            <div className="flex flex-row justify-center">
               <a href="https://www.linkedin.com/in/ducthangtran" target="_blank"
                 className="hover:opacity-50 hover:text-yellow-400 p-2"
               >

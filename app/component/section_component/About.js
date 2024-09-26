@@ -1,6 +1,54 @@
 import styles from "./About.module.css"
 
 export default function About() {
+    const lang_skill = [
+        {
+            link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+            logo: "c-sharp.svg"
+        },
+        {
+            link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            logo: "js.svg"
+        },
+        {
+            link: "https://docs.oracle.com/en/java/index.html",
+            logo: "java.svg"
+        },
+        {
+            link: "https://www.python.org/",
+            logo: "python.svg"
+        }
+    ]
+    const tool_skill = [
+        {
+            link: "https://learn.microsoft.com/en-us/dotnet/",
+            logo: "netCore.svg"
+        },
+        {
+            link: "https://tailwindcss.com/",
+            logo: "tailwind-css.svg"
+        },
+        {
+            link: "https://react.dev/",
+            logo: "reactjs.svg"
+        },
+        {
+            link: "https://nextjs.org/docs",
+            logo: "nextjs.svg"
+        },
+        {
+            link: "https://reactnative.dev/",
+            logo: "react-native.svg"
+        },
+        {
+            link: "https://docs.expo.dev/get-started/introduction",
+            logo: "expo.svg"
+        },
+        {
+            link: "https://spring.io/projects/spring-boot",
+            logo: "springio-icon.svg"
+        },
+    ]
     return (
         <main className="size-[100%]">
             <div className="text-3xl flex flex-row border-b-2 border-b-white pb-3 mb-3">
@@ -33,15 +81,13 @@ export default function About() {
                 <div className="flex flex-wrap flex-row w-[100%] justify-center ">
                     <section>
                         <div className="flex flex-row">
-                                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                    <img className={styles.skill_icon} src="/SVG/c-sharp.svg"/>
-                                </a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                                    <img className={styles.skill_icon} src="/SVG/js.svg"/>
-                                </a>
-                                <a href="https://docs.oracle.com/en/java/index.html">
-                                    <img className={styles.skill_icon} src="/SVG/java.svg"/>
-                                </a>
+                            {lang_skill.map(({link, logo}) => {
+                                return (
+                                    <a href={link}>
+                                        <img className={styles.skill_icon} src={`/SVG/${logo}`}/>
+                                    </a>
+                                )
+                            })}
                         </div>
                     </section>
 
@@ -49,27 +95,13 @@ export default function About() {
                     
                     <section>
                         <div className="flex flex-row">
-                            <a href="https://learn.microsoft.com/en-us/dotnet/">
-                                <img className={styles.skill_icon} src="/SVG/netCore.svg"/>
-                            </a>
-                            <a href="https://tailwindcss.com/docs/installation">
-                                <img className={styles.skill_icon} src="/SVG/tailwind-css.svg"/>
-                            </a>
-                            <a href="https://react.dev/">
-                                <img className={styles.skill_icon} src="/SVG/reactjs.svg"/>
-                            </a>
-                            <a href="https://nextjs.org/docs">
-                                <img className={styles.skill_icon} src="/SVG/nextjs.svg"/>
-                            </a>
-                            <a href="https://reactnative.dev/">
-                                <img className={styles.skill_icon} src="/SVG/react-native.svg"/>
-                            </a>
-                            <a href="https://docs.expo.dev/get-started/introduction/">
-                                <img className={styles.skill_icon} src="/SVG/expo.svg"/>
-                            </a>
-                            <a href="https://spring.io/projects/spring-boot">
-                                <img className={styles.skill_icon} src="/SVG/springio-icon.svg"/>
-                            </a>
+                            {tool_skill.map(({link, logo}) => {
+                                return (
+                                    <a href={link}>
+                                        <img className={styles.skill_icon} src={`/SVG/${logo}`}/>
+                                    </a>
+                                )
+                            })}
                         </div>
                     </section>
                 </div>

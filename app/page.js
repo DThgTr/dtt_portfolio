@@ -4,7 +4,6 @@ import Intro from "./component/section_component/Intro"
 import About from "./component/section_component/About"
 import Experience from "./component/section_component/Experience"
 import Project from "./component/section_component/Project"
-import Contact from "./component/section_component/Contact"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import NavBar from "./component/NavBar"
@@ -37,7 +36,8 @@ export default function Home() {
                 p-[2%]
                 mb-[3%]
                 rounded-3xl shadow-lg
-                bg-blue-800 bg-opacity-25
+                bg-blue-600 bg-opacity-25
+                brightness-110
                 h-[640px]
         ">
             <AnimatePresence mode="wait">

@@ -9,7 +9,11 @@ export default function NavBar({ sections, activeSection, onSectionChange }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
 
-          <div className="text-3xl font-semibold flex items-center space-x-2">
+          <div className="
+            text-4xl font-semibold flex items-center space-x-2 
+            text-transparent
+            bg-clip-text bg-gradient-to-br from-yellow-400 to-yellow-100
+          ">
               <span>Duc Thang Tran</span>
           </div>
 
