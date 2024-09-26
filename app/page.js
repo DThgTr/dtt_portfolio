@@ -16,8 +16,7 @@ export default function Home() {
     Intro,
     About,
     Experience,
-    Project,
-    Contact
+    Project
   }
   return (
     <main className="

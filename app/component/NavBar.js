@@ -9,18 +9,20 @@ export default function NavBar({ sections, activeSection, onSectionChange }) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
 
-          <div className="flex items-center">
-            <button
-              onClick={() => onSectionChange('Intro')}
-              className="text-3xl font-semibold hover:text-blue-500 flex items-center space-x-2"
-            >
-              <LucideHome className="size-10"/>
+          <div className="text-3xl font-semibold flex items-center space-x-2">
               <span>Duc Thang Tran</span>
-            </button>
           </div>
 
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
+              <button
+                onClick={() => onSectionChange('Intro')}
+                className={`px-3 py-2 rounded-md font-medium mr-2 transition-colors ${
+                  activeSection === 'Intro' ? 'bg-indigo-500 text-white' : 'hover:bg-pink-400'
+                }`}
+              >
+                <LucideHome className="size-8"/>
+              </button>
               {sections.filter(section => section !== 'Intro').map((section) => (
                 <button
                   key={section}

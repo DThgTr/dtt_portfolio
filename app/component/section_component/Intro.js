@@ -1,23 +1,39 @@
 
-import { Github, Link2, Linkedin } from "lucide-react";
+import { Github, Link2, Linkedin, Mail, PhoneCall } from "lucide-react";
 
 export default function Intro() {
     return (
       <section className="
           flex flex-row
-          justify-center
           items-center
           size-full
+          space-x-[2%]
       ">
-        <figure className="relative md:h-[70%] md:w-[30%]">
+        <section className="
+          flex flex-col w-[50%] h-full
+          justify-center
+          items-center
+          space-y-5
+        ">
+          <figure className="relative h-[60%] w-[50%]">
             <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
-        </figure>
-
-        <div className="mx-[4%]"></div>
+          </figure>
+          <div className="text-lg">
+            <span className="flex flex-row space-x-4">
+              <PhoneCall className="size-7"/> 
+              <p>+1 469 922 7783</p>
+            </span>
+            <span className="flex flex-row space-x-4">
+              <Mail className="size-7"/> 
+              <p>tdtran420@gmail.com</p>
+            </span>
+          </div>
+          
+        </section>
+        
 
         <section className="
                 flex flex-col
-                w-[50%]
                 p-[1%]
         ">
             {/*Intro */}
