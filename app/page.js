@@ -45,7 +45,7 @@ export default function Home() {
                   brightness-110
           ">
               <AnimatePresence mode="wait">
-                  <motion.div className="h-full overflow-scroll p-[3%] rounded-3xl"
+                  <motion.div className="h-full overflow-auto p-[3%] rounded-3xl"
                       key={activeSection}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
