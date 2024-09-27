@@ -18,7 +18,7 @@ export default function Home() {
     Project
   }
   return (
-    <main className="h-screen overflow-hidden bg-gradient-to-br from-pink-800 via-purple-800 to-blue-800 brightness-95">
+    <main className="h-screen overflow-hidden bg-gradient-to-br from-pink-800 via-purple-800 to-blue-800">
       <NavBar
         sections={Object.keys(section_comps)}
         activeSection={activeSection}

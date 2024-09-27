@@ -16,7 +16,7 @@ export default function Intro() {
           space-y-3
           px-3
         ">
-          <figure className="relative size-full md:h-[60%] md:w-[60%]">
+          <figure className="relative w-[250px] md:w-[70%]">
             <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
           </figure>
           <div className="text-lg">
@@ -69,7 +69,7 @@ export default function Intro() {
               </a>
             </div>
             
-            <div className="flex flex-row justify-center hover:text-yellow-400 hover:opacity-50 underline text-2xl mt-3">
+            <div className="flex flex-row justify-center space-x-2 hover:text-yellow-400 hover:opacity-50 underline text-2xl mt-3">
               <Link2 className="pr-2 size-10"/>
                 <a href="https://docs.google.com/document/d/14_n4Mf9zu7zjXIZUN7Gw3aVsB3qDK-b4Ic_KCAnipF0/edit?usp=drive_link">
                     Download Resume
