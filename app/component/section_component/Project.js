@@ -29,7 +29,7 @@ export default function Project() {
     ]
 
     return (
-        <div className="size-full overflow-scroll">
+        <div className="size-full">
             <table className="table-fixed w-[100%]">
                 <caption className="text-3xl border-b-2 border-b-white pb-3 mb-3 text-center">
                     <p className="text-yellow-500 mr-2">Projects</p>
