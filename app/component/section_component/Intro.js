@@ -4,7 +4,7 @@ import { Github, Link2, Linkedin, Mail, PhoneCall } from "lucide-react";
 export default function Intro() {
     return (
       <section className="
-          flex flex-row
+          flex flex-col md:flex-row
           items-center
           size-full
           space-x-[2%]
@@ -16,7 +16,7 @@ export default function Intro() {
           space-y-3
           px-3
         ">
-          <figure className="relative h-[60%] w-[60%]">
+          <figure className="relative size-full md:h-[60%] md:w-[60%]">
             <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
           </figure>
           <div className="text-lg">
@@ -41,16 +41,16 @@ export default function Intro() {
             <div className="
                 break-words overflow-wrap break-word
             ">
-                <p className="text-xl mb-2 italic">Hello there!</p>
+                
 
-                <p className="text-2xl italic">
-                    &emsp;My name is <strong className="text-yellow-400">Duc Thang Tran</strong>. 
-                    <br className="mb-2"/>
-                    &emsp;&emsp;Some know me as <strong className="text-yellow-400">Colby</strong>.
+                <p className="text-2xl italic space-y-3 flex flex-col">
+                    <span className="text-xl italic">Hello there!</span>
+                    <span className="md:ml-12">My name is <strong className="text-yellow-400">Duc Thang Tran</strong>.</span>
+                    <span className="md:ml-24">Some know me as <strong className="text-yellow-400">Colby</strong>.</span>
                 </p>
 
                 <p className="font-bold text-4xl my-[5%]">
-                    I am a <em className="text-yellow-400">fullstack developer</em>
+                    I am a <em className="text-yellow-400">Software Developer</em>
                 </p>
             </div>
 

@@ -7,7 +7,7 @@ export default function NavBar({ sections, activeSection, onSectionChange }) {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm z-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex flex-col items-end md:items-center md:flex-row md:justify-between md:h-16">
 
           <div className="
             text-4xl font-semibold flex items-center space-x-2 

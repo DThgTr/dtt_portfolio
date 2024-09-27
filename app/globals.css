@@ -38,5 +38,5 @@ body {
 }
 
 main {
-  @apply text-blue-100 overflow-auto
+  @apply text-indigo-200 overflow-auto
 }
