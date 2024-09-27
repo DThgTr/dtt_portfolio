@@ -17,7 +17,7 @@ export default function Intro() {
           px-3
         ">
           <figure className="relative w-[250px] md:w-[70%]">
-            <img src="/incandescent.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
+            <img src="/the_handsome_me.jpeg"  alt="author's picture" className="object-cover size-full rounded-3xl border"/>
           </figure>
           <div className="text-lg">
             <span className="flex flex-row space-x-4">
