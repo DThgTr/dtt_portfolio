@@ -1,7 +1,7 @@
 # Duc Thang Tran (Colby) Portfolio
 
 This is my personal portfolio.
-- Website: [ducthangtran-colby](https://main--ducthangtran-colby.netlify.app/)
+- Website: [ducthangtran-colby](https://ducthangtran-colby.netlify.app/)
 - Github: [@DThgTr](https://github.com/DThgTr)
 - LinkedIn: [@ducthangtran](https://linkedin.com/in/ducthangtran)
 
