@@ -24,7 +24,7 @@ export default function Project() {
             proj_name: "OS Instruction Intepreter",
             proj_link: [],
             description: "This is a Java application that simulated the behavior of a Processor and its Memory, built as a part of OS System coursework. Encoding and execution support were built for 31 distinct low-level instructions.",
-            skills: ["Java", "Operating System Programming"]
+            skills: ["Java", "OS Programming"]
         }
     ]
 

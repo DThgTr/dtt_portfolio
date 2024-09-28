@@ -50,7 +50,7 @@ export default function Intro() {
                 </p>
 
                 <p className="font-bold text-4xl my-[5%]">
-                    I am a <em className="text-yellow-400">Software Developer</em>
+                    I am a <em className="text-yellow-400">Software Engineer</em>
                 </p>
             </div>
 

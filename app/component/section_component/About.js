@@ -78,7 +78,7 @@ export default function About() {
                 <p className="text-3xl text-center w-[100%] m-5">
                     Main <strong className="text-yellow-500">Skills</strong>:
                 </p>
-                <div className="flex flex-wrap flex-row w-[100%] justify-center ">
+                <div className="flex flex-wrap flex-row w-[100%] justify-center">
                     <section>
                         <div className="flex flex-row">
                             {lang_skill.map(({link, logo}) => {
@@ -90,8 +90,6 @@ export default function About() {
                             })}
                         </div>
                     </section>
-
-                    <div className="mx-7 border border-white"></div>
                     
                     <section>
                         <div className="flex flex-row">
