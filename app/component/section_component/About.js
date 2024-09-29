@@ -62,7 +62,7 @@ export default function About() {
                         I am currently a Computer Science senior at the University of Texas at Dallas, I am graduating in May 2025.&nbsp;
                         <span className="mt-2">
                             My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.
-                            In addition, I have been leaning into Machine Learning for more than a year, doing data cleaning, building and training neural networks using Python and Tensorflow.
+                            I am a detail-oriented software engineer. My specialty lies in developing fullstack applications with a focus on building backend systems. I have experience working with <em className="text-yellow-600">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em className="text-yellow-600">Java</em>, but I am also familiar with <em className="text-yellow-600">C#, Javascript, C and C++</em>. In addition, I have been learning Machine Learning on my own for nearly a year, doing data cleaning and training models using <em className="text-yellow-600">Python and mostly Tensorflow</em>.
                         </span>
                     </p>
                     <p className="mb-5">
@@ -74,17 +74,17 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="flex flex-wrap justify-center my-8">
+            <section className="flex flex-wrap justify-center">
                 <p className="text-3xl text-center w-[100%] m-5">
                     Main <strong className="text-yellow-500">Skills</strong>:
                 </p>
-                <div className="flex flex-wrap flex-row w-[100%] justify-center">
+                <div className="flex flex-wrap flex-row w-[100%] justify-center space-y-3 md:space-y-0">
                     <section>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row space-x-2 mx-2">
                             {lang_skill.map(({link, logo}) => {
                                 return (
                                     <a href={link}>
-                                        <img className={styles.skill_icon} src={`/SVG/${logo}`}/>
+                                        <img className="size-10 md:size-14 lg:size-16 hover:opacity-25" src={`/SVG/${logo}`}/>
                                     </a>
                                 )
                             })}
@@ -92,11 +92,11 @@ export default function About() {
                     </section>
                     
                     <section>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row space-x-2 mx-2">
                             {tool_skill.map(({link, logo}) => {
                                 return (
                                     <a href={link}>
-                                        <img className={styles.skill_icon} src={`/SVG/${logo}`}/>
+                                        <img className="size-10 md:size-14 lg:size-16 hover:opacity-25" src={`/SVG/${logo}`}/>
                                     </a>
                                 )
                             })}
