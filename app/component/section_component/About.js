@@ -57,10 +57,10 @@ export default function About() {
             <section>
                 <div className="max-w-min min-w-fit text-xl">
                     <p className="mb-5">
-                        I am currently a Computer Science senior at the University of Texas at Dallas, I am graduating in May 2025.&nbsp;
+                        I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;
                         <span className="mt-2">
-                            My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.
-                            I am a detail-oriented software engineer. My specialty lies in developing fullstack applications with a focus on building backend systems. I have experience working with <em className="text-yellow-600">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em className="text-yellow-600">Java</em>, but I am also familiar with <em className="text-yellow-600">C#, Javascript, C and C++</em>. In addition, I have been learning Machine Learning on my own for nearly a year, doing data cleaning and training models using <em className="text-yellow-600">Python and mostly Tensorflow</em>.
+                            My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.&nbsp;
+                            I have experience working with <em className="text-yellow-600">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em className="text-yellow-600">Java</em>, but I am also familiar with <em className="text-yellow-600">C#, Javascript, C and C++</em>. In addition, I have been learning Machine Learning on my own for nearly a year, doing data cleaning and training models using <em className="text-yellow-600">Python and mostly Tensorflow</em>.
                         </span>
                     </p>
                     <p className="mb-5">

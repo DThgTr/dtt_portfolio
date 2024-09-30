@@ -57,22 +57,22 @@ export default function Intro() {
             {/*Links */}
             <div className="flex flex-row justify-center">
               <a href="https://www.linkedin.com/in/ducthangtran" target="_blank"
-                className="hover:opacity-50 hover:text-yellow-400 p-2"
+                className="hover:opacity-50 hover:text-blue-400 p-2"
               >
                 <Linkedin className="size-12"/>
               </a>
               <div className="mx-3"/>
               <a href="https://github.com/DThgTr" target="_blank"
-                className="hover:opacity-50 hover:text-yellow-400 p-2"
+                className="hover:opacity-50 hover:text-blue-400 p-2"
               >
                 <Github className="size-12"/>
               </a>
             </div>
             
-            <div className="flex flex-row justify-center space-x-2 hover:text-yellow-400 hover:opacity-50 underline text-2xl mt-3">
+            <div className="flex flex-row justify-center space-x-2 hover:text-blue-400 hover:opacity-50 underline text-2xl mt-3">
               <Link2 className="pr-2 size-10"/>
                 <a href="https://docs.google.com/document/d/14_n4Mf9zu7zjXIZUN7Gw3aVsB3qDK-b4Ic_KCAnipF0/edit?usp=drive_link">
-                    Download Resume
+                    Resume
                 </a>
               <Link2 className="pl-2 size-10"/>
             </div>

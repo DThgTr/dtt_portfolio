@@ -18,7 +18,7 @@ export default function Project() {
             proj_name: "ACM Research",
             proj_link: ["ACM UTD", "https://www.acmutd.co/research"],
             description: "ACM Research is a semseter-long program ochestrated by ACM UTD. During my time here, I collaborated with a team to conduct guided research on methods for uncovering anonymous users in Tornado Cash, a crypto tumbler. We developed a simulation environment and data collection scripts, which automated the result collection and compilation process. Comparison test are then performed on the collected simulated transaction data with a predetermined heuristic cluster pattern as the core, which indicated prospects of enhancing address linking accuracy up to 84%.",
-            skills: ["Javascript", "Shell Scripting"]
+            skills: ["Javascript", "Shell Script"]
         },
         {
             proj_name: "OS Instruction Intepreter",
