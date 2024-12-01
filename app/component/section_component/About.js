@@ -1,52 +1,9 @@
+import resume_lists from '@/app/resume_lists.json'
+
 export default function About() {
-    const lang_skill = [
-        {
-            link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-            logo: "c-sharp.svg"
-        },
-        {
-            link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            logo: "js.svg"
-        },
-        {
-            link: "https://docs.oracle.com/en/java/index.html",
-            logo: "java.svg"
-        },
-        {
-            link: "https://www.python.org/",
-            logo: "python.svg"
-        }
-    ]
-    const tool_skill = [
-        {
-            link: "https://learn.microsoft.com/en-us/dotnet/",
-            logo: "netCore.svg"
-        },
-        {
-            link: "https://tailwindcss.com/",
-            logo: "tailwind-css.svg"
-        },
-        {
-            link: "https://react.dev/",
-            logo: "reactjs.svg"
-        },
-        {
-            link: "https://nextjs.org/docs",
-            logo: "nextjs.svg"
-        },
-        {
-            link: "https://reactnative.dev/",
-            logo: "react-native.svg"
-        },
-        {
-            link: "https://docs.expo.dev/get-started/introduction",
-            logo: "expo.svg"
-        },
-        {
-            link: "https://spring.io/projects/spring-boot",
-            logo: "springio-icon.svg"
-        },
-    ]
+    const lang_skill = resume_lists.lang_skill
+    const tool_skill = resume_lists.tool_skill
+    
     return (
         <main className="size-[100%]">
             <div className="text-3xl flex flex-row border-b-2 border-b-white pb-3 mb-3">
