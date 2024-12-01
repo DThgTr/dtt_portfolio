@@ -1,6 +1,6 @@
 {
     "about_content": {
-        "text": "I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;<span class=\"mt-2\">My specialty lies in developing <em class=\"text-yellow-600\">fullstack applications</em> with a focus on building <em class=\"text-yellow-600\">backend systems</em>.&nbsp;I have experience working with <em class=\"text-yellow-600\">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em class=\"text-yellow-600\">Java</em>, but I am also familiar with <em class=\"text-yellow-600\">C#, Javascript, C and C++</em>.</span>",
+        "text": "I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;<span class=\"mt-2\">My specialty lies in developing <em class=\"text-yellow-600\">fullstack applications</em> with a focus on building <em class=\"text-yellow-600\">backend systems</em>.&nbsp;I have experience working with <em class=\"text-yellow-600\">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em class=\"text-yellow-600\">Java</em>, but I am also familiar with <em class=\"text-yellow-600\">Python, C#, Javascript, C and C++</em>.</span>",
         "developer_section": "<strong class=\"text-3xl text-yellow-500\">As a developer</strong>, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture best practices and standards.<br><br>",
         "individual_section": "<strong class=\"text-3xl text-yellow-500\">As an individual</strong>, I am attentive to details and always on the lookout for new opportunities to grow my skills."
     },
@@ -50,7 +50,7 @@
       {
         "proj_name": "ACM Research",
         "proj_link": ["ACM UTD", "https://www.acmutd.co/research"],
-        "description": "ACM Research is a semester-long program orchestrated by ACM UTD. During my time here, I collaborated with a team to conduct guided research on methods for uncovering anonymous users in Tornado Cash, a crypto tumbler. We developed a simulation environment and data collection scripts, which automated the result collection and compilation process. Comparison tests were then performed on the collected simulated transaction data with a predetermined heuristic cluster pattern as the core",
+        "description": "ACM Research is a semester-long program orchestrated by ACM UTD. During my time here, I collaborated with a team to conduct guided research on methods for uncovering anonymous users in Tornado Cash, a crypto tumbler. We developed a simulation environment and data collection scripts, which automated the result collection and compilation process. Comparison tests were then performed on the collected simulated transaction data with a predetermined heuristic cluster pattern as the core.",
         "skills": ["Javascript", "Shell Script"]
       }
     ],
