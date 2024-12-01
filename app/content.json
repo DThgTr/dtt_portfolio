@@ -1,6 +1,6 @@
 {
     "about_content": {
-        "text": "I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;<span class=\"mt-2\">My specialty lies in developing <em class=\"text-yellow-600\">fullstack applications</em> with a focus on building <em class=\"text-yellow-600\">backend systems</em>.&nbsp;I have experience working with <em class=\"text-yellow-600\">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em class=\"text-yellow-600\">Java</em>, but I am also familiar with <em class=\"text-yellow-600\">C#, Javascript, C and C++</em>. In addition, I have been learning Machine Learning on my own for nearly a year, doing data cleaning and training models using <em class=\"text-yellow-600\">Python and mostly Tensorflow</em>.</span>",
+        "text": "I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;<span class=\"mt-2\">My specialty lies in developing <em class=\"text-yellow-600\">fullstack applications</em> with a focus on building <em class=\"text-yellow-600\">backend systems</em>.&nbsp;I have experience working with <em class=\"text-yellow-600\">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em class=\"text-yellow-600\">Java</em>, but I am also familiar with <em class=\"text-yellow-600\">C#, Javascript, C and C++</em>.</span>",
         "developer_section": "<strong class=\"text-3xl text-yellow-500\">As a developer</strong>, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture best practices and standards.<br><br>",
         "individual_section": "<strong class=\"text-3xl text-yellow-500\">As an individual</strong>, I am attentive to details and always on the lookout for new opportunities to grow my skills."
     },
@@ -17,35 +17,41 @@
         "position": "IT Intern",
         "company": "Da Nang Hospital, Vietnam",
         "date": ["Jun 2022", "Aug 2022"],
-        "content": "Collaborated with the IT team to configure and deploy a demo AlwaysOn Availability Group. Setup Windows Server 2016 virtual machines on VMware Workstation as well as helped configure a Windows Server Failover Cluster (WSFC) and integrate SQL Server instances into the WSFC. Assisted the Network Administrator in demonstrating the demo, which was approved for further development as an upgrade to the hospital's disaster recovery system.",
+        "content": "Collaborated with the IT team to configure and deploy a demo AlwaysOn Availability Group. Setup Windows Server 2016 virtual machines on VMware Workstation as well as helped configure a Windows Server Failover Cluster (WSFC) and integrate SQL Server instances into the WSFC.",
         "skills": ["Networking", "SQL Server", "Windows Server 2016", "VMWare Workstation"]
       }
     ],
 
     "projects": [
       {
+        "proj_name": "CHP Gas Engine Senior Project - Caterpillar Inc.",
+        "proj_link": [],
+        "description": "The CHP Gas Engine Application is sponsored by Caterpillar Inc. as part of the course Senior Project, which is a part of the curriculum of University of Texas at Dallas. It employs a decoupled frontend-backend architecture. The web UI is developed with Angular, and the backend logic is powered by .NET. This application enables users to analyze key metrics and forecast expenditures for Caterpillar's generator products, providing valuable insights for decision-making.",
+        "skills": [".NET", "C#", "Angular", "Typescript"]
+      },
+      {
+        "proj_name": "EasyCSV",
+        "proj_link": ["DEVPOST", "https://devpost.com/software/con-chim-non"],
+        "description": "EasyCSV is our effort as part of HackUTA. It is a CSV explorer application with capability for efficient data query using Generative AI-supported SQL formulation. It is implemented using Python. Its SQL formulation feature is powered by AnythingLLM. Its UI was implemented using Streamlit, a Python-based UI framework. ",
+        "skills": ["Python", "Generative AI", "AnythingLLM", "Streamlit"]
+      },
+      {
         "proj_name": "Web Portfolio",
-        "proj_link": ["Github", "https://github.com/DThgTr/dtt_portfolio"],
+        "proj_link": ["GITHUB", "https://github.com/DThgTr/dtt_portfolio"],
         "description": "This is my personal web portfolio. It is built with React, styled with Tailwind and deployed on Netlify.",
         "skills": ["Javascript", "React", "Tailwind", "Nextjs"]
       },
       {
         "proj_name": "Sale Management Application (Melior)",
-        "proj_link": ["Github", "https://github.com/DThgTr/meliorapp"],
+        "proj_link": ["GITHUB", "https://github.com/DThgTr/meliorapp"],
         "description": "Melior is a Spring Boot-powered, web-based sample system application that manage sale transactions as well as customers' information of an essential oils company. It employs Restful architectural style as the template for its APIs, which are documented with Swagger UI. This project is where I put to use my ability to employ Test-Driven Development methodology, design cohesive Database schemas and formulate Software Architecture Design.",
         "skills": ["Java", "Spring Boot", "Rest API", "OpenAPI"]
       },
       {
         "proj_name": "ACM Research",
         "proj_link": ["ACM UTD", "https://www.acmutd.co/research"],
-        "description": "ACM Research is a semester-long program orchestrated by ACM UTD. During my time here, I collaborated with a team to conduct guided research on methods for uncovering anonymous users in Tornado Cash, a crypto tumbler. We developed a simulation environment and data collection scripts, which automated the result collection and compilation process. Comparison tests were then performed on the collected simulated transaction data with a predetermined heuristic cluster pattern as the core, which indicated prospects of enhancing address linking accuracy up to 84%.",
+        "description": "ACM Research is a semester-long program orchestrated by ACM UTD. During my time here, I collaborated with a team to conduct guided research on methods for uncovering anonymous users in Tornado Cash, a crypto tumbler. We developed a simulation environment and data collection scripts, which automated the result collection and compilation process. Comparison tests were then performed on the collected simulated transaction data with a predetermined heuristic cluster pattern as the core",
         "skills": ["Javascript", "Shell Script"]
-      },
-      {
-        "proj_name": "OS Instruction Interpreter",
-        "proj_link": [],
-        "description": "This is a Java application that simulated the behavior of a Processor and its Memory, built as a part of OS System coursework. Encoding and execution support were built for 31 distinct low-level instructions.",
-        "skills": ["Java", "OS Programming"]
       }
     ],
 
