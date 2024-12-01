@@ -1,8 +1,8 @@
 import ExpCard from "../util/ExpCard";
-import resume_lists from '@/app/resume_lists.json'
+import content from '@/app/content.json'
 
 export default function Experience() {
-    const work_exp = resume_lists.work_exp
+    const work_exp = content.work_exp
 
     return (
         <div className="size-full">

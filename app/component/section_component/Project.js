@@ -1,8 +1,8 @@
 import ProjCard from "../util/ProjCard"
-import resume_lists from '@/app/resume_lists.json'
+import content from '@/app/content.json'
 
 export default function Project() {
-    const projects = resume_lists.projects
+    const projects = content.projects
 
     return (
         <div className="size-full">

@@ -1,9 +1,9 @@
-import resume_lists from '@/app/resume_lists.json'
+import content from '@/app/content.json'
 
 export default function About() {
-    const lang_skill = resume_lists.lang_skill
-    const tool_skill = resume_lists.tool_skill
-    
+    const lang_skill = content.lang_skill
+    const tool_skill = content.tool_skill
+    const aboutContent = content.about_content
     return (
         <main className="size-[100%]">
             <div className="text-3xl flex flex-row border-b-2 border-b-white pb-3 mb-3">
@@ -13,19 +13,9 @@ export default function About() {
 
             <section>
                 <div className="max-w-min min-w-fit text-xl">
-                    <p className="mb-5">
-                        I am currently a Computer Science senior at the University of Texas at Dallas, graduating in May 2025.&nbsp;
-                        <span className="mt-2">
-                            My specialty lies in developing <em className="text-yellow-600">fullstack applications</em> with a focus on building <em className="text-yellow-600">backend systems</em>.&nbsp;
-                            I have experience working with <em className="text-yellow-600">.NET Core, React, React Native and Spring Boot</em>. My strongest language is <em className="text-yellow-600">Java</em>, but I am also familiar with <em className="text-yellow-600">C#, Javascript, C and C++</em>. In addition, I have been learning Machine Learning on my own for nearly a year, doing data cleaning and training models using <em className="text-yellow-600">Python and mostly Tensorflow</em>.
-                        </span>
-                    </p>
-                    <p className="mb-5">
-                        <strong className="text-3xl text-yellow-500">As a developer</strong>, I am fascinated with building responsive and scalable applications as well as exploring and applying various architecture best practices and standards.
-                    </p>
-                    <p>
-                        <strong className="text-3xl text-yellow-500">As an individual</strong>, I am attentive to details and always on the lookout for new opportunities to grow my skills.
-                    </p>
+                    <p className="mb-5" dangerouslySetInnerHTML={{ __html: aboutContent.text }} />
+                    <p dangerouslySetInnerHTML={{ __html: aboutContent.developer_section }} />
+                    <p dangerouslySetInnerHTML={{ __html: aboutContent.individual_section }} />
                 </div>
             </section>
 
